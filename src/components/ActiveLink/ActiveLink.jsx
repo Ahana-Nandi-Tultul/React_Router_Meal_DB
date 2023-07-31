@@ -6,7 +6,7 @@ const ActiveLink = ({router, children}) => {
     return (
         <div className='text-white p-2 hover:bg-slate-600 rounded-lg me-2'>
             <NavLink
-            to={path}>{name}</NavLink>
+            to={path} className={({isActive}) => isActive? 'bg-blue-900': ''}>{name}</NavLink>
         </div>
     );
 };
